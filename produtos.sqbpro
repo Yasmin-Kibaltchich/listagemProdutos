@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Projetos/JAVASCRIPT/Teste/produtos.db" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="2048"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="Produtos.sql">BEGIN TRANSACTION;
+CREATE TABLE &quot;Produto&quot; (
+    &quot;CdProduto&quot; INTEGER UNIQUE,
+    &quot;CdStatus&quot;  INTEGER NOT NULL CHECK (CdStatus IN (0, 1)),
+    &quot;NomeProduto&quot;   TEXT NOT NULL,
+    &quot;DescricaoProduto&quot;  TEXT NOT NULL,
+    &quot;ValorProduto&quot;  REAL NOT NULL,
+    PRIMARY KEY(&quot;CdProduto&quot; AUTOINCREMENT)
+);
+COMMIT;
+
+</sql><sql name="SQL 2">INSERT INTO Produto( NomeProduto,CdStatus, DescricaoProduto, ValorProduto) VALUES (&quot;TV Tela Plana&quot;, 0 ,  &quot;Uma Tv de 32 POL&quot;, 13.5)
+
+select * from Produto order by ValorProduto ASC
+
+delete from Produto
+
+Drop table Produto
+Drop table </sql><current_tab id="0"/></tab_sql></sqlb_project>

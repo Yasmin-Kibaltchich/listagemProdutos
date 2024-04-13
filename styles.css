@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1, h2 {
+    color: #0077FF;
+    font-weight: bold;
+  }
+  
+  p {
+    color: #444444;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+  thead{
+    justify-content: center;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  #formProduto {
+    width: 500px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    border-radius: 10px;
+  }
+  
+  #formProduto label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #formProduto input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 95% ;
+  }
+  
+  #formProduto button {
+    background-color: #0077FF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #lista-produtos {
+    width: 100%;
+    
+  }
+  
+  #lista-produtos td {
+    text-align: center;
+  }
+  
+#lista-produtos button {
+  background-color: #0077ff;
+  color: #ffffff;
+  border: none;
+  justify-content: center;
+  display: flex;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px
+  
+}
+.btn-outline-primary {
+  background-color: #0077ff;
+  color: #ffffff;
+  border: none;  
+  display: flex;
+  top: 20px;
+  float:left; 
+  padding: 10px 20px; 
+ 
+}
